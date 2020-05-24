@@ -41,6 +41,12 @@ spring:
       host: localhost
       port: 27017
       database: test
+      #admin监控
+#  boot:
+#    admin:
+#      url: http://localhost:8081
+#      client:
+#        name: AdminTest
 
 #    schema:
 #      - classpath:sql/department.sql
@@ -53,3 +59,16 @@ logging:
 mybatis:
   mapper-locations: classpath:/mappers/*Mapper.xml
   type-aliases-package: com.springboot.springbootjdbc.dao
+  #应用监控配置
+#management:
+    ##  server:
+    ##    port: 9999
+    ##    address: 127.0.0.1
+    ##    #敏感信息访问限制
+    ##  endpoint:
+    ##    beans:
+    ##      enabled: true
+    ##    health:
+    ##      enabled: true
+
+
